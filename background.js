@@ -1,3 +1,5 @@
 chrome.browserAction.onClicked.addListener(function (tab) {
-    chrome.tabs.executeScript(tab.id, { file: 'highlight.js' });
+    chrome.storage.local.get('enabled', function (data) {
+        chrome.storage.local.set({ enabled: !data.enabled });
+    });
 });

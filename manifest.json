@@ -12,7 +12,13 @@
         "48": "icon-48.png",
         "128": "icon-128.png"
     },
-    "permissions": ["tabs", "http://*/*", "https://*/*", "storage"],
+    "permissions": ["tabs", "storage", "http://*/*", "https://*/*", "storage"],
     "version": "16.11.24",
-    "manifest_version": 2
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["script.js"]
+        }
+    ]
 }

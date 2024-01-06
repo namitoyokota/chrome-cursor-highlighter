@@ -2,8 +2,10 @@ const cursorHighlighter = document.createElement('div');
 cursorHighlighter.id = 'chrome-cursor-highlighter';
 
 document.onmousemove = (event) => {
-    cursorHighlighter.style.left = event.pageX - 35 + 'px';
-    cursorHighlighter.style.top = event.pageY - 35 + 'px';
+    if (cursorHighlighter) {
+        cursorHighlighter.style.left = event.pageX - 35 + 'px';
+        cursorHighlighter.style.top = event.pageY - 35 + 'px';
+    }
 };
 
 chrome.storage.local.get('enabled', function (data) {

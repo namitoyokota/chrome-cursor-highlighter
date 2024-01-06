@@ -2,8 +2,8 @@
     z-index: 2147483647;
     position: absolute;
     background-color: grey;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     opacity: 0.25;
     pointer-events: none;

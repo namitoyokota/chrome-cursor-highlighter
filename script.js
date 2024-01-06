@@ -3,8 +3,8 @@ cursorHighlighter.id = 'chrome-cursor-highlighter';
 
 document.onmousemove = (event) => {
     if (cursorHighlighter) {
-        cursorHighlighter.style.left = event.pageX - 35 + 'px';
-        cursorHighlighter.style.top = event.pageY - 35 + 'px';
+        cursorHighlighter.style.left = event.pageX - 30 + 'px';
+        cursorHighlighter.style.top = event.pageY - 30 + 'px';
     }
 };
 
